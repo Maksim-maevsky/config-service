@@ -1,1 +1,6 @@
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://discovery_service:8761/eureka}
+      
+management.endpoints.web.exposure.include: "*"
